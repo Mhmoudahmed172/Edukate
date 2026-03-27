@@ -17,7 +17,7 @@ class PageFactory extends Factory
      */
     public function definition()
     {
-        $pageName = ['about', 'praivcy', 'terms', 'help', 'faqs'];
+        $pageName = ['about', 'privacy', 'terms', 'help', 'faqs'];
         $slug = $this->faker->unique()->randomElement($pageName);
         return [
             'slug' => $slug,
